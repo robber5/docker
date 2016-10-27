@@ -1,0 +1,30 @@
+ version: '2'
+ services:
+   web:
+     image: nginx:latest
+     volumes:
+       - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+     ports:
+       - "80:80"
+     restart: always
+
+   db:
+     image: mysql:latest
+     volumes:
+       - "./mysql/db/:/var/lib/mysql/"
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: google
+
+   webapp_sample:
+     depends_on:
+       - db
+     image: php:latest
+     volumes:
+       - "./webapp/sample/:/var/www/"
+     links:
+       - db
+     ports:
+       - "8100:80"
+     restart: always
+     command: "php -S 0.0.0.0:80 -t /var/www/"

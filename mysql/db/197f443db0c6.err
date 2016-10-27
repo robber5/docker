@@ -1,0 +1,39 @@
+2016-10-27T05:58:18.402873Z mysqld_safe Starting mysqld daemon with databases from /var/lib/mysql
+2016-10-27T05:58:18.581734Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-10-27T05:58:18.582945Z 0 [Note] /usr/sbin/mysqld (mysqld 5.7.16) starting as process 203 ...
+2016-10-27T05:58:18.585878Z 0 [Note] InnoDB: PUNCH HOLE support available
+2016-10-27T05:58:18.585916Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-10-27T05:58:18.585922Z 0 [Note] InnoDB: Uses event mutexes
+2016-10-27T05:58:18.585925Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-10-27T05:58:18.585927Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2016-10-27T05:58:18.585930Z 0 [Note] InnoDB: Using Linux native AIO
+2016-10-27T05:58:18.586152Z 0 [Note] InnoDB: Number of pools: 1
+2016-10-27T05:58:18.586303Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-10-27T05:58:18.588700Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2016-10-27T05:58:18.595713Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-10-27T05:58:18.597180Z 0 [Note] InnoDB: If the mysqld execution user is authorized, page cleaner thread priority can be changed. See the man page of setpriority().
+2016-10-27T05:58:18.608929Z 0 [Note] InnoDB: Highest supported file format is Barracuda.
+2016-10-27T05:58:18.617359Z 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2016-10-27T05:58:18.617424Z 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2016-10-27T05:58:18.617465Z 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2016-10-27T05:58:18.735113Z 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2016-10-27T05:58:18.738919Z 0 [Note] InnoDB: 96 redo rollback segment(s) found. 96 redo rollback segment(s) are active.
+2016-10-27T05:58:18.738985Z 0 [Note] InnoDB: 32 non-redo rollback segment(s) are active.
+2016-10-27T05:58:18.739726Z 0 [Note] InnoDB: Waiting for purge to start
+2016-10-27T05:58:18.790771Z 0 [Note] InnoDB: 5.7.16 started; log sequence number 2532239
+2016-10-27T05:58:18.792102Z 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2016-10-27T05:58:18.792503Z 0 [Note] Plugin 'FEDERATED' is disabled.
+2016-10-27T05:58:18.797017Z 0 [Note] InnoDB: Buffer pool(s) load completed at 161027  5:58:18
+2016-10-27T05:58:18.800029Z 0 [Warning] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+2016-10-27T05:58:18.800603Z 0 [Note] Server hostname (bind-address): '*'; port: 3306
+2016-10-27T05:58:18.800646Z 0 [Note] IPv6 is available.
+2016-10-27T05:58:18.800654Z 0 [Note]   - '::' resolves to '::';
+2016-10-27T05:58:18.800668Z 0 [Note] Server socket created on IP: '::'.
+2016-10-27T05:58:18.803244Z 0 [Warning] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2016-10-27T05:58:18.803286Z 0 [Warning] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2016-10-27T05:58:18.803307Z 0 [Warning] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2016-10-27T05:58:18.803315Z 0 [Warning] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2016-10-27T05:58:18.804091Z 0 [Warning] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2016-10-27T05:58:18.808500Z 0 [Note] Event Scheduler: Loaded 0 events
+2016-10-27T05:58:18.809123Z 0 [Note] /usr/sbin/mysqld: ready for connections.
+Version: '5.7.16'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)

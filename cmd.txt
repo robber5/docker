@@ -1,0 +1,7 @@
+docker run --name mysqldb -v /home/r5/docker/mysql/db/:/var/lib/mysql/ -e $MYSQL_ROOT_PASSWORD:google -d mysql
+
+
+docker run --name app1 -v ~/web/app1:/var/www -w /var/www/ -p 8000:8000  -d php php -S 0.0.0.0:8000 -t /var/www/
+
+
+docker run --name app1 -v ~/web/app1:/var/www -w /var/www/ -p 8000:8000 --link mysql -d php php -S 0.0.0.0:8000 -t /var/www/
